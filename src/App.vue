@@ -1,21 +1,24 @@
 <template>
-  <navbar
+  <!-- <navbar :page="pages[activePage]"></navbar> -->
+  <dynamic-links
     :pages="pages"
     :active-page="activePage"
     :nav-link-click="index => (activePage = index)"
   >
-  </navbar>
-  <page-viewer :page="pages[activePage]"> </page-viewer>
+  </dynamic-links>
+  <page-content :page="pages[activePage]"> </page-content>
 </template>
 
 <script>
-import PageViewer from './components/page-viewer/PageViewer.vue';
+import PageContent from './components/page-content/PageContent.vue';
+import DynamicLinks from './components/dynamic-links/dynamicLinks.vue';
 import Navbar from './components/navbar/Navbar.vue';
 
 export default {
   components: {
-    PageViewer,
-    Navbar,
+    PageContent,
+    DynamicLinks,
+    // Navbar,
   },
   data() {
     return {
@@ -32,9 +35,30 @@ export default {
           content: 'this is about page content',
         },
         {
+          link: { text: 'Project', url: 'projects.html' },
+          pageTitle: 'Projects Page',
+          content: 'this is Projects page content',
+        },
+        {
           link: { text: 'Contact', url: 'contact.html' },
           pageTitle: 'Contact Page',
           content: 'this is contact page content',
+        },
+      ],
+      dynamicLinkPages: [
+        {
+          link: { text: 'web Design', url: 'web-design.html' },
+          name: 'web Design',
+        },
+        {
+          link: { text: 'Mobile App Design', url: 'mobile-app-design.html' },
+
+          name: 'Mobile App Design',
+        },
+        {
+          link: { text: 'Freebies', url: 'freebies.html' },
+
+          name: 'Freebies',
         },
       ],
     };

@@ -1,28 +1,11 @@
 <template>
-  <nav :class="[`navbar`, `navbar-expand-lg`]">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">LOGO</a>
-      <ul class="navbar-nav">
-        <li v-for="(page, index) in pages" class="nav-item" :key="index">
-          <navbar-link
-            :page="page"
-            :isActive="activePage === index"
-            @click.prevent="navLinkClick(index)"
-          ></navbar-link>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="header">
+    <h1>{{ page.pageTitle }}</h1>
+  </div>
 </template>
+
 <script>
-import NavbarLink from '../navbar/NavbarLink.vue';
 export default {
-  components: { NavbarLink },
-  props: ['pages', 'activePage', 'navLinkClick'],
+  props: ['page'],
 };
 </script>
-<style>
-.emphasize {
-  border-bottom: 3px solid rgb(244, 210, 17);
-}
-</style>
