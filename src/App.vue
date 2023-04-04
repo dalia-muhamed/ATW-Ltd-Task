@@ -1,5 +1,5 @@
 <template>
-  <!-- <navbar :page="pages[activePage]"></navbar> -->
+  <navbar :pages="pages"></navbar>
   <dynamic-links
     :dynamicLinkPages="dynamicLinkPages"
     :active-page="activePage"
@@ -23,28 +23,28 @@ export default {
   data() {
     return {
       activePage: 0,
-      // pages: [
-      //   {
-      //     link: { text: 'Home', url: 'index.html' },
-      //     pageTitle: 'Home Page',
-      //     content: 'this is home page content',
-      //   },
-      //   {
-      //     link: { text: 'About', url: 'about.html' },
-      //     pageTitle: 'About Page',
-      //     content: 'this is about page content',
-      //   },
-      //   {
-      //     link: { text: 'Project', url: 'projects.html' },
-      //     pageTitle: 'Projects Page',
-      //     content: 'this is Projects page content',
-      //   },
-      //   {
-      //     link: { text: 'Contact', url: 'contact.html' },
-      //     pageTitle: 'Contact Page',
-      //     content: 'this is contact page content',
-      //   },
-      // ],
+      pages: [
+        {
+          link: { text: 'Home', url: 'index.html' },
+          pageTitle: 'Home Page',
+          content: 'this is home page content',
+        },
+        {
+          link: { text: 'About', url: 'about.html' },
+          pageTitle: 'About Page',
+          content: 'this is about page content',
+        },
+        {
+          link: { text: 'Project', url: 'projects.html' },
+          pageTitle: 'Projects Page',
+          content: 'this is Projects page content',
+        },
+        {
+          link: { text: 'Contact', url: 'contact.html' },
+          pageTitle: 'Contact Page',
+          content: 'this is contact page content',
+        },
+      ],
       dynamicLinkPages: [
         {
           link: { text: 'Web Design', url: 'web-design.html' },
