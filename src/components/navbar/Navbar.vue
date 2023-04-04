@@ -15,7 +15,7 @@
   </nav>
 </template>
 <script>
-import NavbarLink from './NavbarLink.vue';
+import NavbarLink from '../navbar/NavbarLink.vue';
 export default {
   components: { NavbarLink },
   props: ['pages', 'activePage', 'navLinkClick'],

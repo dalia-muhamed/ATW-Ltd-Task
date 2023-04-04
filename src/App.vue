@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import PageViewer from './PageViewer.vue';
-import Navbar from './Navbar.vue';
+import PageViewer from './components/page-viewer/PageViewer.vue';
+import Navbar from './components/navbar/Navbar.vue';
 
 export default {
   components: {
