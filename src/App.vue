@@ -18,38 +18,33 @@ export default {
   components: {
     PageContent,
     DynamicLinks,
-    // Navbar,
+    Navbar,
   },
   data() {
     return {
       activePage: 0,
       pages: [
         {
-          link: { text: 'Home', url: 'index.html' },
-          pageTitle: 'Home Page',
-          content: 'this is home page content',
+          text: 'Home',
+          url: 'index.html',
         },
         {
-          link: { text: 'About', url: 'about.html' },
-          pageTitle: 'About Page',
-          content: 'this is about page content',
+          text: 'About',
+          url: 'about.html',
         },
         {
-          link: { text: 'Project', url: 'projects.html' },
-          pageTitle: 'Projects Page',
-          content: 'this is Projects page content',
+          text: 'Project',
+          url: 'projects.html',
         },
         {
-          link: { text: 'Contact', url: 'contact.html' },
-          pageTitle: 'Contact Page',
-          content: 'this is contact page content',
+          text: 'Contact',
+          url: 'contact.html',
         },
       ],
       dynamicLinkPages: [
         {
           link: { text: 'Web Design', url: 'web-design.html' },
           content: 'welcome to web Design',
-
           name: 'Web Design',
         },
         {
@@ -60,7 +55,6 @@ export default {
         {
           link: { text: 'Freebies', url: 'freebies.html' },
           content: 'welcome to Freebies',
-
           name: 'Freebies',
         },
       ],
