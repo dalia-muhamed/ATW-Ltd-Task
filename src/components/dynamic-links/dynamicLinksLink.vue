@@ -1,10 +1,10 @@
 <template>
   <a
-    :href="dynamicLinkPage.link.url"
+    :href="dynamicLinkPage.url"
     class="nav-link"
     :class="activeClasses"
-    :title="`this link goes to the ${dynamicLinkPage.link.text}page`"
-    >{{ dynamicLinkPage.link.text }}
+    :title="`this link goes to the ${dynamicLinkPage.name}page`"
+    >{{ dynamicLinkPage.name }}
   </a>
 </template>
 <script>

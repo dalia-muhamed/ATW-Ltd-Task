@@ -43,17 +43,17 @@ export default {
       ],
       dynamicLinkPages: [
         {
-          link: { text: 'Web Design', url: 'web-design.html' },
+          url: 'web-design.html',
           content: 'welcome to web Design',
           name: 'Web Design',
         },
         {
-          link: { text: 'Mobile App Design', url: 'mobile-app-design.html' },
+          url: 'mobile-app-design.html',
           name: 'Mobile App Design',
           content: 'welcome to Mobile App Design',
         },
         {
-          link: { text: 'Freebies', url: 'freebies.html' },
+          url: 'freebies.html',
           content: 'welcome to Freebies',
           name: 'Freebies',
         },

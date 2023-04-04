@@ -3,7 +3,7 @@
     :href="page.link.url"
     class="nav-link"
     :class="activeClasses"
-    :title="`this link goes to the ${dynamicLinkPage.link.text}page`"
+    :title="`this link goes to the ${dynamicLinkPage.name}page`"
     >{{ page.link.text }}
   </a>
 </template>
