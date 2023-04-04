@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <h1>{{ page.pageTitle }}</h1>
-    <p>{{ page.content }}</p>
+    <h1>{{ dynamicLinkPage.name }}</h1>
+    <p>{{ dynamicLinkPage.content }}</p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['page'],
+  props: ['dynamicLinkPage'],
 };
 </script>

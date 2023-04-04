@@ -2,9 +2,13 @@
   <nav :class="`dynamic-links`">
     <div class="container-fluid">
       <ul class="navbar-nav">
-        <li v-for="(page, index) in pages" class="nav-item" :key="index">
+        <li
+          v-for="(dynamicLinkPage, index) in dynamicLinkPages"
+          class="nav-item"
+          :key="index"
+        >
           <dynamic-links-link
-            :page="page"
+            :dynamicLinkPage="dynamicLinkPage"
             :isActive="activePage === index"
             @click.prevent="navLinkClick(index)"
           ></dynamic-links-link>
@@ -17,7 +21,7 @@
 import DynamicLinksLink from './dynamicLinksLink.vue';
 export default {
   components: { DynamicLinksLink },
-  props: ['pages', 'activePage', 'navLinkClick'],
+  props: ['dynamicLinkPages', 'activePage', 'navLinkClick'],
 };
 </script>
 <style>
