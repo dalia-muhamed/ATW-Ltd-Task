@@ -1,6 +1,6 @@
 <template>
   <nav :class="`dynamic-links`">
-    <div class="container-fluid">
+    <div class="dynamic-tabs">
       <ul class="navbar-nav">
         <li
           v-for="(dynamicLinkPage, index) in dynamicLinkPages"

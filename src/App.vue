@@ -43,19 +43,19 @@ export default {
       ],
       dynamicLinkPages: [
         {
-          url: 'web-design.html',
-          content: 'welcome to web Design',
           name: 'Web Design',
+          url: 'web-design.html',
+          content: ['minify.svg', 'lumy.svg', 'keeper.svg', 'ant-personal.svg'],
         },
         {
-          url: 'mobile-app-design.html',
           name: 'Mobile App Design',
-          content: 'welcome to Mobile App Design',
+          url: 'mobile-app-design.html',
+          content: ['minify.svg', 'lumy.svg'],
         },
         {
-          url: 'freebies.html',
-          content: 'welcome to Freebies',
           name: 'Freebies',
+          url: 'freebies.html',
+          content: ['ant-personal.svg'],
         },
       ],
     };
