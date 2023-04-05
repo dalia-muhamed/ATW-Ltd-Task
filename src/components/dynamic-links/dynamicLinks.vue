@@ -1,5 +1,5 @@
 <template>
-  <nav :class="`dynamic-links`">
+  <nav class="dynamic-links">
     <div class="dynamic-tabs">
       <ul class="navbar-nav">
         <li
@@ -24,8 +24,3 @@ export default {
   props: ['dynamicLinkPages', 'activePage', 'navLinkClick'],
 };
 </script>
-<style>
-.emphasize {
-  border-bottom: 3px solid rgb(244, 210, 17);
-}
-</style>

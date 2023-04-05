@@ -62,3 +62,17 @@ export default {
   },
 };
 </script>
+<style>
+@font-face {
+  font-family: Poppins;
+  src: url('../src/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url('../src/assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: extraPoppins;
+  src: url('../src/assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+</style>

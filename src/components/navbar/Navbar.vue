@@ -5,7 +5,10 @@
     </div>
     <ul class="navbar-nav">
       <li v-for="(page, index) in pages" class="nav-item" :key="index">
-        <navbar-link :page="page"></navbar-link>
+        <navbar-link
+          :page="page"
+          :isActive="activePage === index"
+        ></navbar-link>
       </li>
     </ul>
   </nav>
@@ -17,6 +20,6 @@ import NavbarLink from './NavbarLink.vue';
 
 export default {
   components: { NavbarLink },
-  props: ['pages'],
+  props: ['pages', 'activePage', 'navLinkClick'],
 };
 </script>

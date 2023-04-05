@@ -61,6 +61,29 @@
       </div>
       <!-- </li> -->
     </div>
+    <div class="contact-div">
+      <h1 class="contact-heading">
+        Interested working<br />
+        with me?
+      </h1>
+      <div class="email-container">
+        <img src="../../assets/icons/mail.svg" alt="icon" />Email Me
+      </div>
+    </div>
+    <div class="footer">
+      <p class="lets-connect">Let's Connect</p>
+      <div class="foot-icons">
+        <img class="instgram" src="../../assets/icons/Vector.svg" alt="icon" />
+        <img class="youtube" src="../../assets/icons/youtube.svg" alt="icon" />
+        <img class="kora" src="../../assets/icons/kora.svg" alt="icon" />
+      </div>
+      <div class="back-to-top-container">
+        <p>Back to Top</p>
+        <a class="back-to-top" href="#">
+          <img src="../../assets/icons/short_up.svg" />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
